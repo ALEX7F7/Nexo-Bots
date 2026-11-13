@@ -35,13 +35,299 @@ function member(data, id) {
 add('premium', c => expiry(c.chat) > Date.now()
   ? '💎 Premium activo hasta ' + new Date(expiry(c.chat)).toLocaleString('es-GT',{timeZone:'America/Guatemala'})
   : '💎 Envía este ID al vendedor después de pagar para activar Premium: ' + c.chat)
+const commandHelp = {
+  "premium": [
+    "premium",
+    "Consulta la vigencia de Premium o el ID para activarlo."
+  ],
+  "menu": [
+    "menu Economía",
+    "Abre una categoría del menú."
+  ],
+  "ping": [
+    "ping",
+    "Comprueba si el bot responde."
+  ],
+  "botinfo": [
+    "botinfo",
+    "Muestra las funciones del bot."
+  ],
+  "status": [
+    "status",
+    "Consulta el estado de Premium."
+  ],
+  "balance": [
+    "balance",
+    "Muestra tus coins en la cartera y el banco."
+  ],
+  "economyinfo": [
+    "economyinfo",
+    "Consulta tu saldo de economía."
+  ],
+  "economyboard": [
+    "economyboard",
+    "Muestra el ranking por saldo total."
+  ],
+  "daily": [
+    "daily",
+    "Reclama 300 coins cada 24 horas."
+  ],
+  "work": [
+    "work",
+    "Trabaja para ganar coins."
+  ],
+  "crime": [
+    "crime",
+    "Intenta ganar coins con el riesgo de perder parte de tu saldo."
+  ],
+  "deposit": [
+    "deposit 100",
+    "Pasa coins de la cartera al banco."
+  ],
+  "withdraw": [
+    "withdraw all",
+    "Retira coins del banco a tu cartera."
+  ],
+  "givecoins": [
+    "darcoins @Ana 500",
+    "Envía coins de tu cartera. El dueño puede acreditarlas sin gastar saldo."
+  ],
+  "steal": [
+    "steal @Ana",
+    "Intenta robar coins con el riesgo de pagar una multa."
+  ],
+  "coinflip": [
+    "coinflip 10 cara",
+    "Apuesta coins a cara o cruz."
+  ],
+  "roulette": [
+    "roulette black 10",
+    "Apuesta coins a rojo (red) o negro (black)."
+  ],
+  "setdescription": [
+    "setdescription Me gusta el anime",
+    "Cambia la descripción de tu perfil."
+  ],
+  "setgenre": [
+    "setgenre otro",
+    "Actualiza el género de tu perfil."
+  ],
+  "delgenre": [
+    "delgenre",
+    "Quita el género de tu perfil."
+  ],
+  "setbirth": [
+    "setbirth 08/05",
+    "Guarda tu cumpleaños en formato día/mes."
+  ],
+  "delbirth": [
+    "delbirth",
+    "Quita tu cumpleaños del perfil."
+  ],
+  "birthdays": [
+    "birthdays",
+    "Muestra los cumpleaños de los próximos 30 días."
+  ],
+  "allbirthdays": [
+    "allbirthdays",
+    "Lista los cumpleaños registrados."
+  ],
+  "level": [
+    "level",
+    "Consulta tu nivel y experiencia."
+  ],
+  "leaderboard": [
+    "leaderboard",
+    "Muestra el ranking de experiencia."
+  ],
+  "profile": [
+    "profile @Ana",
+    "Consulta el perfil de una persona. Sin mención muestra el tuyo."
+  ],
+  "rollwaifu": [
+    "rollwaifu",
+    "Saca un personaje al azar."
+  ],
+  "claim": [
+    "claim",
+    "Reclama el personaje que acabas de sacar."
+  ],
+  "harem": [
+    "harem",
+    "Muestra tu colección de personajes."
+  ],
+  "gachainfo": [
+    "gachainfo",
+    "Consulta tu colección de gacha."
+  ],
+  "charinfo": [
+    "charinfo Bocchi",
+    "Consulta la serie y disponibilidad del personaje."
+  ],
+  "serielist": [
+    "serielist",
+    "Lista las series disponibles."
+  ],
+  "serieinfo": [
+    "serieinfo Bocchi the Rock!",
+    "Muestra los personajes de la serie."
+  ],
+  "deletewaifu": [
+    "deletewaifu Bocchi",
+    "Libera un personaje de tu colección."
+  ],
+  "givechar": [
+    "givechar @Ana Bocchi",
+    "Regala un personaje de tu colección."
+  ],
+  "sell": [
+    "sell 100 Bocchi",
+    "Pon un personaje a la venta por 100 coins."
+  ],
+  "removesale": [
+    "removesale Bocchi",
+    "Retira un personaje de la venta."
+  ],
+  "haremshop": [
+    "haremshop",
+    "Muestra los personajes en venta."
+  ],
+  "buycharacter": [
+    "buycharacter Bocchi",
+    "Compra un personaje disponible en la tienda."
+  ],
+  "bot": [
+    "bot on",
+    "Activa las funciones del bot en el grupo."
+  ],
+  "onlyadmin": [
+    "onlyadmin on",
+    "Restringe los comandos del grupo a administradores."
+  ],
+  "economy": [
+    "economy on",
+    "Activa la economía del grupo."
+  ],
+  "gacha": [
+    "gacha on",
+    "Activa el gacha del grupo."
+  ],
+  "welcome": [
+    "welcome on",
+    "Activa los avisos de bienvenida."
+  ],
+  "goodbye": [
+    "goodbye on",
+    "Activa los avisos de despedida."
+  ],
+  "antilink": [
+    "antilink on",
+    "Activa el filtro de enlaces para miembros sin permisos de administrador."
+  ],
+  "setwelcome": [
+    "setwelcome ¡Hola {usuario}!",
+    "Personaliza el mensaje de bienvenida."
+  ],
+  "setgoodbye": [
+    "setgoodbye ¡Hasta luego, {usuario}!",
+    "Personaliza el mensaje de despedida."
+  ],
+  "testwelcome": [
+    "testwelcome",
+    "Prueba el mensaje de bienvenida."
+  ],
+  "group": [
+    "group",
+    "Muestra el nombre y el ID del grupo."
+  ],
+  "msgcount": [
+    "msgcount @Ana",
+    "Consulta cuántos mensajes ha registrado el bot."
+  ],
+  "topcount": [
+    "topcount",
+    "Muestra el ranking de mensajes registrados."
+  ],
+  "setwarnlimit": [
+    "setwarnlimit 3",
+    "Ajusta el límite de advertencias."
+  ],
+  "warns": [
+    "warns @Ana",
+    "Consulta las advertencias de un miembro."
+  ],
+  "delwarn": [
+    "delwarn @Ana",
+    "Quita una advertencia al miembro mencionado."
+  ],
+  "warn": [
+    "warn @Ana",
+    "Registra una advertencia para el miembro mencionado."
+  ],
+  "kick": [
+    "kick @Ana",
+    "Expulsa del grupo al miembro mencionado."
+  ],
+  "promote": [
+    "promote @Ana",
+    "Da permisos de administrador al miembro mencionado."
+  ],
+  "demote": [
+    "demote @Ana",
+    "Quita los permisos de administrador al miembro mencionado."
+  ],
+  "close": [
+    "close",
+    "Limita el envío de mensajes a administradores."
+  ],
+  "open": [
+    "open",
+    "Permite que todos los miembros envíen mensajes."
+  ],
+  "tag": [
+    "tag Reunión a las 8",
+    "Envía un aviso con menciones a todos los miembros."
+  ],
+  "del": [
+    "del",
+    "Responde a un mensaje con este comando para eliminarlo."
+  ],
+  "sticker": [
+    "sticker",
+    "Envía una foto con este texto o responde a una foto para convertirla."
+  ],
+  "toimage": [
+    "toimage",
+    "Responde a un sticker para convertirlo en imagen."
+  ],
+  "getpic": [
+    "getpic @Ana",
+    "Consulta la foto de perfil de la persona mencionada."
+  ]
+}
 add('menu', c => {
   const sections = Object.entries(catalog).map(([section, commands]) => [section,Object.keys(commands).filter(name => handlers[name])])
     .filter(([,names]) => names.length)
-  if (!c.text) return '💎 Bot Premium\n' + sections.map(([section]) => '#menu ' + section).join('\n') +
+  if (!c.text) return '💎 *Nexo-Bots Premium*\n\nEscribe el comando de una categoría para ver sus funciones y ejemplos.\n\n' + sections.map(([section]) => '#menu ' + section).join('\n') +
     '\n#premium · #ping · #menu\n' + (expiry(c.chat)>Date.now()?'Acceso activo.':'El vendedor debe activar tu acceso.')
   const section = sections.find(([name]) => normalize(name) === normalize(c.text))
-  return section ? section[0] + '\n' + section[1].map(name => '#'+(name==='givecoins' ? 'darcoins' : name)).join(' · ') : 'Escribe #menu para ver las categorías.'
+  if (!section) return 'Escribe #menu para ver las categorías.'
+  const [title, names] = section
+  const entries = names.map(name => {
+    const [example, description] = commandHelp[name]
+    const command = '#' + example.split(' ')[0]
+    const aliases = catalog[title][name].map(alias => '#' + alias)
+    if (name === 'givecoins') {
+      aliases.splice(aliases.indexOf('#darcoins'), 1, '#givecoins')
+    }
+    return [
+      '✦ *' + command + '*',
+      description + (roles[name] === 'admin' ? ' (Administradores del grupo)' : ''),
+      'Ejemplo · #' + example,
+      ...(aliases.length ? ['Alias · ' + aliases.join(' · ')] : [])
+    ].join('\n')
+  })
+  return '💎 *Nexo-Bots Premium · ' + title + '*\n\n' + entries.join('\n\n')
 })
 add('ping', () => '🏓 Bot en línea.')
 add('botinfo', () => '💎 Bot Premium · Economía, gacha, perfiles, stickers y moderación.')
