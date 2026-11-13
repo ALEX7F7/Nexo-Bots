@@ -1,0 +1,5 @@
+node_modules/
+sesion/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

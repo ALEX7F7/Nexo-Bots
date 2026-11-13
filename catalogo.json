@@ -1,0 +1,598 @@
+{
+  "Economía": {
+    "balance": [
+      "bal",
+      "coins"
+    ],
+    "coinflip": [
+      "flip",
+      "cf"
+    ],
+    "crime": [],
+    "daily": [],
+    "deposit": [
+      "dep",
+      "depositar",
+      "d"
+    ],
+    "economyboard": [
+      "eboard",
+      "baltop"
+    ],
+    "economyinfo": [
+      "einfo"
+    ],
+    "givecoins": [
+      "darcoins",
+      "pay",
+      "coinsgive"
+    ],
+    "roulette": [
+      "rt"
+    ],
+    "slut": [],
+    "steal": [
+      "robar",
+      "rob"
+    ],
+    "withdraw": [
+      "with",
+      "retirar"
+    ],
+    "work": [
+      "w"
+    ]
+  },
+  "Stickers": {
+    "delpack": [],
+    "delstickermeta": [
+      "delmeta"
+    ],
+    "getpack": [
+      "stickerpack",
+      "pack"
+    ],
+    "newpack": [
+      "newstickerpack"
+    ],
+    "packfavourite": [
+      "setpackfav",
+      "packfav"
+    ],
+    "packunfavourite": [
+      "unsetpackfav",
+      "packunfav"
+    ],
+    "setpackprivate": [
+      "setpackpriv",
+      "packprivate"
+    ],
+    "setpackpublic": [
+      "setpackpub",
+      "packpublic"
+    ],
+    "setstickermeta": [
+      "setmeta"
+    ],
+    "setstickerpackdesc": [
+      "setpackdesc",
+      "packdesc"
+    ],
+    "sticker": [
+      "s",
+      "stickers"
+    ],
+    "stickeradd": [
+      "addsticker"
+    ],
+    "stickerdel": [
+      "delsticker"
+    ],
+    "stickerpacks": [
+      "packlist"
+    ]
+  },
+  "Gacha": {
+    "buycharacter": [
+      "buychar",
+      "buyc"
+    ],
+    "charimage": [
+      "waifuimage",
+      "cimage",
+      "wimage"
+    ],
+    "charinfo": [
+      "winfo",
+      "waifuinfo"
+    ],
+    "charvideo": [
+      "waifuvideo",
+      "cvideo",
+      "wvideo"
+    ],
+    "claim": [
+      "c",
+      "reclamar"
+    ],
+    "delclaimmsg": [],
+    "deletewaifu": [
+      "delwaifu",
+      "delchar"
+    ],
+    "favoritetop": [
+      "favtop"
+    ],
+    "gachainfo": [
+      "ginfo",
+      "infogacha"
+    ],
+    "giveallharem": [],
+    "givechar": [
+      "givewaifu",
+      "regalar"
+    ],
+    "harem": [
+      "waifus",
+      "claims"
+    ],
+    "haremshop": [
+      "tiendawaifus",
+      "wshop"
+    ],
+    "removesale": [
+      "removerventa"
+    ],
+    "rollwaifu": [
+      "rw",
+      "roll"
+    ],
+    "sell": [
+      "vender"
+    ],
+    "serieinfo": [
+      "ainfo",
+      "animeinfo"
+    ],
+    "serielist": [
+      "slist",
+      "animelist"
+    ],
+    "setclaimmsg": [
+      "setclaim"
+    ],
+    "trade": [
+      "intercambiar"
+    ],
+    "vote": [
+      "votar"
+    ],
+    "waifusboard": [
+      "waifustop",
+      "topwaifus",
+      "wtop"
+    ]
+  },
+  "Descargas": {
+    "facebook": [
+      "fb"
+    ],
+    "hitomi": [
+      "hitomila"
+    ],
+    "mediafire": [
+      "mf"
+    ],
+    "mp4": [
+      "ytmp4",
+      "mp4doc"
+    ],
+    "nhentai": [
+      "nh",
+      "nhdl"
+    ],
+    "pinterest": [
+      "pin"
+    ],
+    "pixiv": [
+      "px",
+      "pixivpdf"
+    ],
+    "play": [
+      "yt",
+      "ytaudio",
+      "playaudio"
+    ],
+    "reel": [
+      "ig",
+      "instagram"
+    ],
+    "tiktok": [
+      "tt"
+    ],
+    "twitter": [
+      "x"
+    ],
+    "vermangasporno": [
+      "vmp"
+    ],
+    "ytsearch": [
+      "search"
+    ]
+  },
+  "Perfiles": {
+    "allbirthdays": [
+      "allbirths"
+    ],
+    "birthdays": [
+      "cumpleaños",
+      "births"
+    ],
+    "delbirth": [],
+    "delfavourite": [
+      "delfav"
+    ],
+    "delgenre": [],
+    "divorce": [],
+    "group": [
+      "gp",
+      "groupinfo"
+    ],
+    "leaderboard": [
+      "lboard",
+      "top"
+    ],
+    "level": [
+      "lvl"
+    ],
+    "marry": [
+      "casarse"
+    ],
+    "marryhistory": [
+      "marriagehistory",
+      "historialmatrimonio"
+    ],
+    "profile": [],
+    "setbirth": [],
+    "setdescription": [
+      "setdesc"
+    ],
+    "setfavourite": [
+      "setfav"
+    ],
+    "setgenre": []
+  },
+  "Sub-bots": {
+    "autojoin": [],
+    "botinfo": [
+      "infobot"
+    ],
+    "join": [],
+    "leave": [
+      "salir"
+    ],
+    "logout": [],
+    "premium": [
+      "infopremium",
+      "premiuminfo"
+    ],
+    "qr": [
+      "code"
+    ],
+    "qrpremium": [
+      "codepremium"
+    ],
+    "reload": [],
+    "setbanner": [
+      "setmenubanner"
+    ],
+    "setbotcurrency": [],
+    "setbotowner": [],
+    "setname": [
+      "setbotname"
+    ],
+    "setpfp": [
+      "setimage"
+    ],
+    "setstatus": [],
+    "setusername": []
+  },
+  "Utilidades": {
+    "bots": [
+      "sockets"
+    ],
+    "del": [
+      "delete"
+    ],
+    "getpic": [
+      "pfp"
+    ],
+    "invite": [],
+    "menu": [
+      "help",
+      "commands",
+      "comandos"
+    ],
+    "ping": [
+      "p"
+    ],
+    "setlang": [
+      "lang"
+    ],
+    "status": [],
+    "suggest": [
+      "addanime",
+      "report"
+    ],
+    "testwelcome": [
+      "testgoodbye"
+    ],
+    "toimage": [
+      "toimg"
+    ]
+  },
+  "Administración": {
+    "alerts": [
+      "alertas"
+    ],
+    "antilink": [
+      "antienlace"
+    ],
+    "bot": [],
+    "close": [],
+    "delwarn": [],
+    "demote": [],
+    "economy": [
+      "economia"
+    ],
+    "gacha": [],
+    "goodbye": [
+      "despedida"
+    ],
+    "groupimage": [
+      "groupimg",
+      "gpimg",
+      "setgroupimage"
+    ],
+    "kick": [],
+    "msgcount": [
+      "count",
+      "messages",
+      "mensajes"
+    ],
+    "nsfw": [],
+    "onlyadmin": [
+      "onlyadmins"
+    ],
+    "open": [],
+    "promote": [],
+    "setgoodbye": [],
+    "setprimary": [],
+    "setwarnlimit": [],
+    "setwelcome": [],
+    "tag": [
+      "hidetag",
+      "tagsay",
+      "tagall"
+    ],
+    "topcount": [
+      "topmessages",
+      "topmsgcount",
+      "topmensajes"
+    ],
+    "topinactive": [
+      "topinactivos",
+      "topinactiveusers"
+    ],
+    "warn": [],
+    "warns": [],
+    "welcome": [
+      "bienvenida"
+    ]
+  },
+  "NSFW": {
+    "anal": [],
+    "ass": [
+      "poto"
+    ],
+    "blowjob": [
+      "mamada",
+      "bj"
+    ],
+    "boobjob": [],
+    "cowgirl": [
+      "vaquera"
+    ],
+    "cum": [],
+    "cummouth": [],
+    "cumshot": [],
+    "danbooru": [
+      "dbooru"
+    ],
+    "e621": [],
+    "fap": [
+      "paja"
+    ],
+    "footjob": [],
+    "fuck": [
+      "coger"
+    ],
+    "gelbooru": [
+      "gbooru",
+      "booru"
+    ],
+    "grabboobs": [],
+    "grope": [],
+    "handjob": [],
+    "hentai": [],
+    "lickass": [],
+    "lickdick": [],
+    "lickpussy": [],
+    "nekomimi": [
+      "neko"
+    ],
+    "pussy": [],
+    "rule34": [
+      "r34"
+    ],
+    "sixnine": [
+      "69"
+    ],
+    "spank": [
+      "nalgada"
+    ],
+    "squirt": [
+      "chorro"
+    ],
+    "suckballs": [],
+    "suckboobs": [],
+    "undress": [
+      "encuerar"
+    ],
+    "yuri": [
+      "tijeras"
+    ]
+  },
+  "Anime": {
+    "angry": [
+      "enojado"
+    ],
+    "bath": [],
+    "bite": [],
+    "bleh": [],
+    "blush": [],
+    "bored": [
+      "aburrido"
+    ],
+    "call": [],
+    "clap": [
+      "aplaudir"
+    ],
+    "coffee": [
+      "cafe"
+    ],
+    "cold": [],
+    "cook": [],
+    "cry": [],
+    "cuddle": [],
+    "dance": [],
+    "dramatic": [
+      "drama"
+    ],
+    "draw": [],
+    "drunk": [],
+    "eat": [
+      "comer"
+    ],
+    "facepalm": [],
+    "gaming": [],
+    "greet": [
+      "hi"
+    ],
+    "hang": [
+      "colgarse"
+    ],
+    "happy": [
+      "feliz"
+    ],
+    "heat": [],
+    "hug": [],
+    "icecream": [
+      "helado"
+    ],
+    "impregnate": [
+      "preg",
+      "preñar"
+    ],
+    "jump": [],
+    "kicked": [
+      "patada"
+    ],
+    "kill": [],
+    "kiss": [
+      "muak"
+    ],
+    "kisscheek": [
+      "beso"
+    ],
+    "kisshead": [
+      "besocabeza"
+    ],
+    "laugh": [],
+    "lewd": [],
+    "lick": [],
+    "look": [
+      "mirar"
+    ],
+    "love": [
+      "amor"
+    ],
+    "nope": [],
+    "pat": [],
+    "poke": [],
+    "pout": [],
+    "psycho": [],
+    "punch": [],
+    "push": [],
+    "read": [
+      "leer"
+    ],
+    "run": [],
+    "sad": [
+      "triste"
+    ],
+    "scared": [],
+    "scream": [],
+    "scrub": [
+      "fregar"
+    ],
+    "seduce": [],
+    "shy": [
+      "timido"
+    ],
+    "sick": [
+      "enfermo"
+    ],
+    "sing": [],
+    "slap": [],
+    "sleep": [],
+    "smile": [
+      "sonreir"
+    ],
+    "smoke": [],
+    "sneeze": [
+      "estornudar"
+    ],
+    "spit": [
+      "escupir"
+    ],
+    "step": [
+      "pisar"
+    ],
+    "study": [
+      "estudiar"
+    ],
+    "talk": [
+      "hablar"
+    ],
+    "think": [],
+    "tickle": [],
+    "walk": [],
+    "yawn": [
+      "bostezar"
+    ]
+  },
+  "Anime (beta)": {
+    "ani": []
+  },
+  "UNO": {
+    "uno": [],
+    "unohistory": [
+      "unohist"
+    ],
+    "unostats": [],
+    "unotop": [
+      "unoboard"
+    ]
+  }
+}
