@@ -107,6 +107,7 @@ async function start() {
       targetBot:Boolean(target && ids(bot).includes(target))})
     if (!result) return
     if (typeof result==='string') return reply(chat,result,msg)
+    if (result.action==='menu') return sock.sendMessage(chat,{text:result.text},{quoted:msg})
     try {
       switch (result.action) {
         case 'participants': {

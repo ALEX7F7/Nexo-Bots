@@ -308,11 +308,21 @@ const commandHelp = {
 add('menu', c => {
   const sections = Object.entries(catalog).map(([section, commands]) => [section,Object.keys(commands).filter(name => handlers[name])])
     .filter(([,names]) => names.length)
-  if (!c.text) return '💎 *Nexo-Bots Premium*\n\nEscribe el comando de una categoría para ver sus funciones y ejemplos.\n\n' + sections.map(([section]) => '#menu ' + section).join('\n') +
-    '\n#premium · #ping · #menu\n' + (expiry(c.chat)>Date.now()?'Acceso activo.':'El vendedor debe activar tu acceso.')
-  const section = sections.find(([name]) => normalize(name) === normalize(c.text))
-  if (!section) return 'Escribe #menu para ver las categorías.'
-  const [title, names] = section
+  if (c.text) {
+    const section = sections.find(([name]) => normalize(name) === normalize(c.text))
+    return section ? '💎 *Nexo-Bots Premium*\n\n' + formatMenuSection(section)
+      : 'Categoría desconocida. Escribe #menu para ver todos los comandos.'
+  }
+
+  const status = expiry(c.chat) > Date.now() ? 'Acceso activo.' : 'El vendedor debe activar tu acceso.'
+  return {
+    action: 'menu',
+    text: ['💎 *Nexo-Bots Premium*\nAquí tienes la lista de comandos.\n' + status,
+      ...sections.map(formatMenuSection)].join('\n\n')
+  }
+})
+
+function formatMenuSection([title, names]) {
   const entries = names.map(name => {
     const [example, description] = commandHelp[name]
     const command = '#' + example.split(' ')[0]
@@ -327,8 +337,8 @@ add('menu', c => {
       ...(aliases.length ? ['Alias · ' + aliases.join(' · ')] : [])
     ].join('\n')
   })
-  return '💎 *Nexo-Bots Premium · ' + title + '*\n\n' + entries.join('\n\n')
-})
+  return '━━ *' + title + '* ━━\n\n' + entries.join('\n\n')
+}
 add('ping', () => '🏓 Bot en línea.')
 add('botinfo', () => '💎 Bot Premium · Economía, gacha, perfiles, stickers y moderación.')
 add('status', c => handlers.premium(c))
